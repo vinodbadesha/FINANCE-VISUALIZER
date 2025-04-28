@@ -1,0 +1,27 @@
+### Get all transactions
+GET http://localhost:4000/transactions
+
+### Create a new transaction
+POST http://localhost:4000/transactions
+Content-Type: application/json
+
+{
+  "amount": 5000,
+  "date": "2025-02-10",
+  "description": "General shopping",
+  "category": "Food"
+}
+
+### Update a transaction
+PUT http://localhost:4000/transactions/2
+Content-Type: application/json
+
+{
+  "amount": 1200,
+  "date": "2025-04-27",
+  "description": "Updated shopping",
+  "category": "Groceries"
+}
+
+### Delete a transaction
+DELETE http://localhost:4000/transactions/2
